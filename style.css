@@ -1,0 +1,31 @@
+* {
+	padding:0px;
+	margin:0px;
+}
+
+body {
+	background:url(images/background.png);
+	background-attatchment:fixed;
+	background-size:auto;
+	width:100%;
+}
+
+.label{
+	position:fixed;
+	top:200px;
+	width:100%;
+}
+
+.enter {
+	position:fixed;
+	top:200px;
+	left:10px;
+	border-radius:15px;
+	opacity:0.85;
+	-webkit-transition:border-radius 1s,opacity 1s;
+}
+
+.enter:hover {
+	border-radius:100%;
+	opacity:1;
+}

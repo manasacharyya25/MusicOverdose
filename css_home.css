@@ -1,0 +1,338 @@
+* {
+	paddin:0px;
+	margin:0px;
+	cursor:default;
+	}
+	
+/************************		DISABLE BLUE BORDER INPUT FOCUS			**********************/
+	
+*:focus {
+	outline:none;
+	
+}
+
+a:link, a:visited, a:hover, a:active {
+		text-decoration:none;
+		color:inherit;
+}
+
+body {
+	width:100%;
+	display:-webkit-box;
+	-webkit-box-pack:vertical;
+	-webkit-box-flex:1;
+	background:url(images/footer_lodyas.png);
+	background-attachment:fixed;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#nav {
+	position:fixed;
+	top:0px;
+	width:100%;
+	height:50px;
+	background:rgba(2,2,2,1);
+	font-family:Tahoma;
+	font-size:18px;
+	color:white;
+	padding-left:75px;
+	}
+#nav #seperator {
+	border:2px solid #55D076;
+	position:fixed;
+	top:50px;
+	left:0px;
+	height:2px;
+	width:100%;
+	background:#55D076;
+	-webkit-box-shadow:0px 2px 5px 2px rgba(85,83,83,0.7);
+}
+	
+#nav li {
+	display:inline-block;
+	align-items:center;
+	list-style:none;
+	padding:10px;
+}
+
+#nav li img {
+	padding-right:5px;
+}
+
+#nav li:hover {
+	background:#55D076;
+}
+
+/******************************	HEADER	***********************************/
+
+#header #propic {
+	position:absolute;
+	top:100px;
+	margin-left:60px;
+	width:270px;
+	border:1px ridge rgba(2,2,2,1,);
+	-webkit-box-shadow:0px 1px 1px rgba(2,2,2,1);
+	border-radius:5px;
+}
+
+/****************************** SOCIAL NETWORK LINKS  *********************/
+
+#header #fb_link {
+		position:absolute;
+		left:60px;
+		top:300px;
+		background:rgba(2,2,2,0.2);
+		padding:10px;
+		padding-left:0px;
+		border-radius:3px;
+	}
+
+#header #fb_link ul {
+	padding-left:27px;
+}
+
+#header #fb_link li {
+	display:inline-block;
+	list-style:none;
+	padding-right:10px;
+}
+
+#header #fb_link li:hover {
+	-webkit-transform:scale(1.2,1.2);
+}
+
+#header #fb_link li img {
+	border-radius:100%;
+}
+
+/***********************************	ABOUT	*********************************/
+
+#header #about {
+	position:absolute;
+	top:450px;
+	left:60px;
+	width:90%;
+	font-family:tahoma;
+}
+
+#header #about ul {
+	background:#D4D1D1;
+	border:#3E3E3E;
+	color:#208AFB;
+	font-size:18px;
+	padding:20px;
+	border-radius:10px;
+	}
+
+#header #about li {
+	width:100%;
+	list-style:none;
+	
+}
+
+#about li ul {
+	display:none;
+	padding-bottom:40px;
+	margin-bottom:20px;
+}
+
+#header #about li:hover {
+	background:;
+	color:#55D076;
+	font-size:24px;
+}
+#header #about li:hover ul {
+	display:block;
+	}
+#header #about #hidden_post {
+	color:black;
+}
+	
+/*****************************	PERSONAL INFO	************************/
+
+#header #about #personal_info input, textarea {
+	padding:10px;
+	margin-top:15px;
+	width:500px;
+	border-radius:3px;
+	-webkit-box-shadow:0px 1px 2px 0px #A09E9E inset;
+	color:#8C898A;
+	font-family:tahoma;
+	font-size:18px;
+	cursor:text;
+}
+
+#header #about #about{
+	width:500px;
+	min-height:460px;
+	position:absolute;
+	left:630px;
+	top:70px;
+}
+
+#header #about #update_personal_info {
+	position:absolute;
+	left:900px;
+	top:590px;
+	background-color:#55D076;
+	font-size:18px;
+	font-family:tahoma;
+	border-radius:5px;
+	border:1px solid #4CB367;
+	color:white;
+	padding:10px 30px;
+}
+
+#header #about #update_personal_info:hover,#header #update_share:hover {
+	background-color:#4CB367;
+}
+
+/**************************	CHANGE PROFILE PIC	*****************************/
+
+/***********************		STYLISED INPUT BUTTON 			*************************/
+
+#header #choose {
+	position:absolute;
+	top:80px;
+	left:420px
+	width: 0px;
+  	height: 0px;
+}
+
+#header #choose::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+#header #choose:before {
+	content:'Choose New Profile Pic';
+	
+	position:absolute;
+	top:50px;
+	left:110px;
+	width:200px;
+	height:20px;
+	padding:13px 35px;
+	padding-right:15px;
+	
+	background-color:#F56769;
+	border:1px solid #F56769;
+	
+	font-family:tahoma;
+  	font-size:18px;
+	color:white;
+	
+	border-radius:25px;
+	-webkit-transition:border 0.2s,background 0.3s,-webkit-transform 0.2s;
+	
+  }
+
+#header #choose:hover:before {
+	background-color:#4CB367;
+	border:1px solid #4CB367;
+	-webkit-box-shadow:0px 0px 0px 0px;
+	-webkit-transform:translateX(195px)
+}
+	
+
+#header #change {
+	position:absolute;
+	top:200px;
+	left:130px;
+	background-color:#ECF555;
+	font-size:18px;
+	font-family:tahoma;
+	border-radius:25px;
+	border:1px solid #ECF555;
+	color:white;
+	padding:10px 45px;
+	-webkit-transition:border 0.2s,background 0.3s,-webkit-transform 0.2s;
+}
+
+#header #change:hover {
+	background-color:#4CB367;
+	border:1px solid #4CB367;
+	-webkit-box-shadow:0px 0px 0px 0px;
+	-webkit-transform:translateX(165px);
+}
+	
+	
+/*********************************************	SHARE	*****************************************/
+
+#header #share_text {
+	position:absolute;
+	left:780px;
+	top:100px;
+	padding:20px;
+	width:400px;
+	height:120px;
+	border-radius:10px;
+	-webkit-box-shadow:0px 1px 5px 0px #979595 inset;
+	cursor:text;
+}
+	
+#header #update_share {
+	position:absolute;
+	top:310px;
+	left:780px;
+	background-color:#55D076;
+	font-size:18px;
+	font-family:tahoma;
+	border-radius:5px;
+	border:1px solid #4CB367;
+	color:white;
+	padding:10px 30px;
+}
+
+
+/********************************	POSTS		***************************/
+
+#header #about li#post {
+	background:#FFFFFF;
+	border-radius:5px;
+	padding:20px 40px;
+	padding-bottom:50px;
+	margin-bottom:10px;
+	width:80%;
+	color:#4CBC90;
+	font-size:18px;
+	font-family:tahoma;
+	border:0.3px solid #969393;
+	line-height:25px;
+	text-align:justify;
+}
+
+#header #about ul.posts img {
+	border-radius:100%;
+	position:relative;
+	left:880px;	
+	top:-50px;
+	margin-right:5px;
+}
+/****************************	VIDEO ****************************/
+#header #about #video {
+	margin:20px 0px;
+}
+
+#header #about #video iframe {
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+#header #about #video #add_video {
+	position:relative;
+	top:10px;
+	left:900px;
+	padding:10px;
+	padding-right:15px;
+	padding-bottom:15px;
+	background:#55D076;
+	border-radius:5px;
+	color:white;
+	font-size:12px;
+	margin-left:-5px;
+	border:1px solid #4CB367;
+}
+
+#header #about #video #add_video:hover {
+	background:	#4CB367;
+}
